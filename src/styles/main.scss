@@ -1,0 +1,167 @@
+@import 'reset';
+
+h1 {
+    font-size: 32pt;
+}
+
+//BODY
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+}
+
+//BUTTONS
+.btn {
+    display: block;
+    font-size: 12px;
+    padding: 10px 40px;
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+.order_btn {
+    color: #212864;
+    border-color: #212864;
+    transition: 0.2s;
+}
+
+.order_btn:hover {
+    color: white;
+    background-color: #212864;
+}
+
+//HEADER
+
+.upper_head {
+    max-width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.logo {
+    p {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.7);
+        text-align: center;
+    }
+}
+
+.numbers,
+.adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.phone_number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #212864
+}
+
+.social_icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+//HEAD >>> navigation
+.nav {
+    background-color: #15193D;
+    height: 55px;
+}
+
+.nav_bar,
+.nav_catalog {
+    max-width: 88vw;
+    margin: 0 auto;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_link {
+    color: white;
+    font-size: 14px;
+    transition: 0.1s;
+}
+
+.nav_link:hover,
+.nav_link:active {
+    color: #FFC239
+}
+
+.catalog {
+    background-color: #8C93D1;
+    height: 55px;
+
+    .vertical {
+        height: 45px;
+        width: 2px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+.face {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 600px;
+    background-image: url(../img/head_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    .text {
+        position: absolute;
+        top: 10vh;
+        left: 10vw;
+
+        h1 {
+            max-width: 875px;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 25px;
+            font-family: 'Montserrat';
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 470px;
+        }
+
+        .calculate_group {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+            a {
+                color: white;
+                #circle, #vector {
+                    transition: all 0,1s ease;
+                }
+                #Group_calculate {
+                    stroke: white;
+                }
+                #Group_calculate:hover {
+                    stroke:#FFC239;
+                }
+            }
+
+            a:hover {
+                color: #FFC239;
+            }
+        }
+    }
+}

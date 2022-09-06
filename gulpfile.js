@@ -49,6 +49,9 @@ function clean() {
 function html() {
   return gulp.src(paths.html.src)
   //.pipe(gulppug())
+  .pipe(size({
+    showFiles:true
+  }))
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(size({
     showFiles:true
