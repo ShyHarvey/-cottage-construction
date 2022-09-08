@@ -1,0 +1,67 @@
+const tabsBtn = document.querySelectorAll(".tabs__nav_btn");
+const tabsItems = document.querySelectorAll(".tabs__item");
+
+tabsBtn.forEach ((item => {
+    item.addEventListener("click", function() {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
+
+        if(!currentBtn.classList.contains('active')){
+        tabsBtn.forEach((item => {
+            item.classList.remove('active');
+        }))
+
+        tabsItems.forEach((item => {
+            item.classList.remove('active');
+        }))
+
+        currentBtn.classList.add('active');
+        currentTab.classList.add('active');
+    }
+    })
+}))
+
+var swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    spaceBetween: 1,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+    mousewheel: {
+        sensitivity: 1,
+    },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+    },
+    breakpoints:{
+        290: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        960: {
+            slidesPerView: 3,
+        },
+        1290: {
+            slidesPerView: 4,
+        },
+        1600: {
+            slidesPerView: 5,
+        },
+    },
+  });
+  

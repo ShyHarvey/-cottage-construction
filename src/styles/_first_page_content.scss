@@ -1,0 +1,184 @@
+//FIRST SECTION
+.face {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 600px;
+    background-image: url(../img/head_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    .text {
+        position: absolute;
+        top: 10vh;
+        left: 10vw;
+
+        h1 {
+            max-width: 875px;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 25px;
+            font-family: 'Montserrat';
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 470px;
+        }
+
+        .calculate_group {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+            a {
+                color: white;
+
+                #circle,
+                #vector {
+                    transition: all 0, 1s ease;
+                }
+
+                #Group_calculate {
+                    stroke: white;
+                }
+
+                #Group_calculate:hover {
+                    stroke: #FFC239;
+                }
+            }
+
+            a:hover {
+                color: #FFC239;
+            }
+        }
+    }
+}
+
+
+//TABS
+.tabs {
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    h1 {
+        font-size: 42px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+
+.tabs__nav_btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tabs__nav_btn {
+    font-size: 20px;
+    font-weight: 500;
+    color: #212864;
+    padding: 10px 30px;
+}
+
+.tabs__nav_btn.active {
+    background-color: #FFC239;
+}
+
+.tabs__item {
+    display: none;
+}
+
+.tabs__item.active {
+    display: block;
+}
+
+
+//TABS>>slider
+
+.slider_card {
+    width: 285px;
+    height: 355px;
+    border-radius: 10px;
+    background-color: rgba(152, 144, 144, 0.31);
+    margin: 0 auto;
+
+    .card_photo {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 285px;
+        height: 140px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    .card_content {
+        color: black;
+        width: 85%;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        table {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            width: 100%;
+            tr {
+                display: inline-block;
+                width: 100%;
+                td {
+                    display: inline-block;
+                    width: 50%;
+                    font-size: 12px;
+                    color: rgba(0, 0, 0, 0.8);
+                }
+            }
+        }
+        .cost {
+            font-weight: bold;
+            font-size: 22px;
+        }
+    }
+}
+.swiper {
+    max-width: 90vw;
+}
+
+.section_btn {
+    margin: 0 auto;
+    width: 310px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.all_projects_btn {
+    font-size: 16px;
+    background-color: #212864;
+    color:white;
+    padding: 15px 30px;
+    transition: 0.2s;
+    text-align: center;
+}
+.all_projects_btn:hover{
+    background-color:#FFC239;
+    color: #212864;
+    border: 1px solid #212864;
+}
