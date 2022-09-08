@@ -22,7 +22,7 @@ tabsBtn.forEach ((item => {
     })
 }))
 
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".card_slider", {
     slidesPerView: 1,
     spaceBetween: 1,
     slidesPerGroup: 1,
@@ -65,3 +65,46 @@ var swiper = new Swiper(".swiper", {
     },
   });
   
+
+  //FAMILY SLIDER
+
+  var swiper = new Swiper(".family_slider_swiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+  });
+
+  //BENEFIT SLIDER
+
+  var swiper = new Swiper(".benefits_slider", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoHeight: false,
+      grid: {
+        rows: 4,
+      },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints:{
+        820: {
+            slidesPerView: 2,
+            grid: {
+                rows: 4,
+              },
+        },
+    },
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+  });

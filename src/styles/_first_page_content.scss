@@ -1,9 +1,9 @@
 //FIRST SECTION
 .face {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.4);
     height: 600px;
     background-image: url(../img/head_background.png);
+    background-color: rgba(0, 0, 0, 0.4);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
@@ -117,6 +117,7 @@
         width: 285px;
         height: 140px;
         overflow: hidden;
+
         img {
             width: 100%;
             height: 100%;
@@ -141,9 +142,11 @@
             margin-top: 15px;
             margin-bottom: 20px;
             width: 100%;
+
             tr {
                 display: inline-block;
                 width: 100%;
+
                 td {
                     display: inline-block;
                     width: 50%;
@@ -152,12 +155,14 @@
                 }
             }
         }
+
         .cost {
             font-weight: bold;
             font-size: 22px;
         }
     }
 }
+
 .swiper {
     max-width: 90vw;
 }
@@ -172,13 +177,136 @@
 .all_projects_btn {
     font-size: 16px;
     background-color: #212864;
-    color:white;
+    color: white;
     padding: 15px 30px;
     transition: 0.2s;
     text-align: center;
 }
-.all_projects_btn:hover{
-    background-color:#FFC239;
+
+.all_projects_btn:hover {
+    background-color: #FFC239;
     color: #212864;
     border: 1px solid #212864;
+}
+
+//FAMILY SLIDER
+.family_slider {
+    .request {
+        width: 25%;
+    }
+
+    .family_slider_images {
+        display: flex;
+        justify-content: space-between;
+
+        .post {
+            height: 144px;
+        }
+    }
+
+    h2 {
+        font-size: 38px;
+        font-weight: 400px;
+        max-width: 45vw;
+        margin-bottom: 50px;
+        margin-top: 30px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 80%;
+    }
+
+    .swiper-button-prev {
+        left: auto;
+        right: 100px;
+    }
+
+    .swiper-pagination {
+        bottom: 91px;
+        right: 50px;
+        left: auto;
+        width: 35px;
+    }
+}
+
+
+.family_slider_slide_1,
+.family_slider_slide_2 {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 90vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.family_slider_slide_1 {
+    background-image: url(../img/second_slider_family_1.png);
+}
+
+.family_slider_slide_2 {
+    background-image: url(../img/second_slider_family_2.png);
+}
+
+
+//BENEFITS
+
+.benefits {
+    margin: 0 auto;
+    display: block;
+    margin-top: 70px;
+    padding-top: 40px ;
+    width: 90%;
+    height: 910px;
+    background-image: url(../img/benefits_background.png);
+    background-color: rgba(246, 246, 249, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    .benefits_slider{
+        .swiper-grid-column > .swiper-wrapper {
+            flex-wrap: wrap;
+            flex-direction: column;
+          }
+        height: 80%;
+        width: 90%;
+        margin:0 auto;
+        .benefits_slide {
+            display: flex;
+            height: calc((90% - 30px) / 4);
+            flex-direction: row;
+            align-items: center;
+            width: 45%;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            .slide_text {
+                margin-left: 10px;
+                h2 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+    }
+
+    h1 {
+        width: 40%;
+        font-weight: bold;
+        text-align: right;
+        margin-bottom: 20px;
+    }
 }
