@@ -108,3 +108,27 @@ var swiper = new Swiper(".card_slider", {
     observeParents: true,
     observeSlideChildren: true,
   });
+
+  //REVIEWS
+
+  var swiper = new Swiper(".reviews_slider", {
+    effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 150,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        spaceBetween: 100,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+  });
