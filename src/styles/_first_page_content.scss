@@ -459,6 +459,43 @@
     }
 }
 
+//LOCATION
+
+
+.location{
+    position: relative;
+    margin:0 auto;
+    max-width:100%;
+    height: 650px;
+    .contacts {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        z-index: 1;
+        left: 10%;
+        background-color: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 50px;
+        >*{
+            align-items: flex-start;
+        }
+       h1,h2 {
+        font-weight: bold;
+        }
+        .social{
+            max-width: 182px;
+            margin: 0 auto;
+        }
+    }
+    .map{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(110, 110, 110);
+    }
+}
 
 
 

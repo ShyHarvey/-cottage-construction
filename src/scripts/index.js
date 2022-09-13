@@ -132,3 +132,13 @@ var swiper = new Swiper(".card_slider", {
           prevEl: ".swiper-button-prev",
         },
   });
+
+  //LOCATION
+  ymaps.ready(init);
+    function init(){
+        var myMap = new ymaps.Map("map", {
+            center: [54.88824547081537, 38.07741936886172],
+            zoom: 15
+        });
+        myMap.controls.remove('searchControl');
+    }
