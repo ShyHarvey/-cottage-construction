@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,33 +16,53 @@
 
 <body>
     <header>
-        <div class="upper_head">
+        <div class="head">
+            <div class="sq">
+                <label class="myLabel" id="myLabel">
+                  <input type="checkbox" id="myCheck" />
+                  <div class="line" id="l1"></div>
+                  <div class="line" id="l2"></div>
+                  <div class="line" id="l3"></div>
+                </label>
+              </div>
             <div class="logo">
-                <p>СТРОИТЕЛЬНАЯ КОМПАНИЯ</p>
-                <img src="img/logo.svg" alt="LOGO">
+                <img src="img/logo.png" alt="LOGO">
             </div>
-            <div class="adress">
-                <p>Пишите нам: <a href="mailto:domstroy-st@bk.ru">domstroy-st@bk.ru</a></p>
-                <p>Моск.обл. г.Ступино ул.Промышленная </p>
-                <p>Пн-Сб 9:00-18:00, Вс - выходной</p>
-            </div>
-            <div class="numbers">
-                <p class="phone_number">+7 (495) 142-07-25</p>
-                <p class="phone_number">+7 (495) 142-07-25</p>
-            </div>
-            <div class="social">
-                <a class="btn order_btn" href="">Заказать звонок</a>
-                <div class="social_icons">
-                    <div class="social_icon"><a href="https://www.instagram.com/" target="_blank"><img
-                                src="img/instagram 1.svg"></a></div>
-                    <div class="social_icon"><a href="https://web.telegram.org/k/" target="_blank"><img
-                                src="img/telegram 1.svg"></a></div>
-                    <div class="social_icon"><a href="https://vk.com/" target="_blank"><img src="img/vk 1.svg"></a>
+            <div class="upper_head">
+                <div class="nav_mobile">
+                    <nav class="nav_bar">
+                        <a class="nav_link" href="#">Главная</a>
+                        <a class="nav_link" href="#">Каталог</a>
+                        <a class="nav_link" href="#">Комплектация</a>
+                        <a class="nav_link" href="#">Заказчику</a>
+                        <a class="nav_link" href="#">Доставка и сборка</a>
+                        <a class="nav_link" href="#">Наши работы</a>
+                        <a class="nav_link" href="#">Контакты</a>
+                    </nav>
+                </div>
+                <div class="adress">
+                    <p>Пишите нам: <a href="mailto:domstroy-st@bk.ru">domstroy-st@bk.ru</a></p>
+                    <p>Моск.обл. г.Ступино ул.Промышленная </p>
+                    <p>Пн-Сб 9:00-18:00, Вс - выходной</p>
+                </div>
+                <div class="numbers">
+                    <p class="phone_number">+7 (495) 142-07-25</p>
+                    <p class="phone_number">+7 (495) 142-07-25</p>
+                </div>
+                <div class="social">
+                    <a class="btn order_btn" href="">Заказать звонок</a>
+                    <div class="social_icons">
+                        <div class="social_icon"><a href="https://www.instagram.com/" target="_blank"><img
+                                    src="img/instagram 1.svg"></a></div>
+                        <div class="social_icon"><a href="https://web.telegram.org/k/" target="_blank"><img
+                                    src="img/telegram 1.svg"></a></div>
+                        <div class="social_icon"><a href="https://vk.com/" target="_blank"><img src="img/vk 1.svg"></a>
+                        </div>
+                        <div class="social_icon"><a href="https://www.whatsapp.com/?lang=ru" target="_blank"><img
+                                    src="img/whatsapp 1.svg"></a></div>
+                        <div class="social_icon"><a href="https://www.youtube.com/" target="_blank"><img
+                                    src="img/youtube 1.svg"></a></div>
                     </div>
-                    <div class="social_icon"><a href="https://www.whatsapp.com/?lang=ru" target="_blank"><img
-                                src="img/whatsapp 1.svg"></a></div>
-                    <div class="social_icon"><a href="https://www.youtube.com/" target="_blank"><img
-                                src="img/youtube 1.svg"></a></div>
                 </div>
             </div>
         </div>
@@ -68,6 +89,9 @@
                 <a href="#" class="nav_link">Каталог хоз. построек</a>
             </nav>
         </div>
+    </header>
+    
+    <main>
         <div class="face">
             <div class="text">
                 <h1 class="face_title">СТРОИТЕЛЬСТВО ДАЧНЫХ ДОМОВ И КОТТЕДЖЕЙ</h1>
@@ -89,8 +113,6 @@
                 </div>
             </div>
         </div>
-    </header>
-    <main>
         <section class="slider_proposals">
             <div class="tabs">
                 <h1>Предложения для вас</h1>
@@ -1059,7 +1081,7 @@
                     </div>
                     <div class="benefits_slide swiper-slide">
                         <div class="slide_text">
-                            <h2>Гарантийное обслуживание любой постройки</h2>
+                            <h2>Гарантийное обслуживание </h2>
                             <p>Даем гарантию не на словах.
                             </p>
                         </div>
@@ -1100,7 +1122,6 @@
                 <h2>Планируете <span>построить индивидуальное строение? Свяжитесь с нами.</span></h2>
                 <p>Хотите постройку в современном минималистичном стиле, но ни один из типовых проектов Вам не подходит?
                     Выход есть!</p>
-                <p>Свяжитесь с нами и мы реализуем задуманное.</p>
                 <img class="request" src="img/send_request.svg">
             </div>
         </section>
@@ -1212,7 +1233,6 @@
     <footer>
         <div class="upper_footer">
             <div class="logo">
-                <p>СТРОИТЕЛЬНАЯ КОМПАНИЯ</p>
                 <img src="img/logo.svg" alt="LOGO">
             </div>
             <div class="adress">
@@ -1239,43 +1259,91 @@
                                 src="img/youtube 1.svg"></a></div>
                 </div>
             </div>
-        </div>  
+        </div>
         <div class="footer_tables">
             <table>
                 <th>ПРОДУКЦИЯ</th>
-                <tr><td><a href="#">Каркасные дома</a></td></tr>
-                <tr><td><a href="#">Модульные дома</a></td></tr>
-                <tr><td><a href="#">Бани “Под ключ”</a></td></tr>
-                <tr><td><a href="#">Беседки</a></td></tr>
-                <tr><td><a href="#">Бытовки (утепленные)</a></td></tr>
-                <tr><td><a href="#">Хоз. постройки </a></td></tr>
+                <tr>
+                    <td><a href="#">Каркасные дома</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Модульные дома</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Бани “Под ключ”</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Беседки</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Бытовки (утепленные)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Хоз. постройки </a></td>
+                </tr>
             </table>
             <table>
                 <th>ПРОДУКЦИЯ</th>
-                <tr><td><a href="#">Каркасные дома</a></td></tr>
-                <tr><td><a href="#">Модульные дома</a></td></tr>
-                <tr><td><a href="#">Бани “Под ключ”</a></td></tr>
-                <tr><td><a href="#">Беседки</a></td></tr>
-                <tr><td><a href="#">Бытовки (утепленные)</a></td></tr>
-                <tr><td><a href="#">Хоз. постройки </a></td></tr>
+                <tr>
+                    <td><a href="#">Каркасные дома</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Модульные дома</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Бани “Под ключ”</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Беседки</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Бытовки (утепленные)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Хоз. постройки </a></td>
+                </tr>
             </table>
             <table>
                 <th>ПРОДУКЦИЯ</th>
-                <tr><td><a href="#">Каркасные дома</a></td></tr>
-                <tr><td><a href="#">Модульные дома</a></td></tr>
-                <tr><td><a href="#">Бани “Под ключ”</a></td></tr>
-                <tr><td><a href="#">Беседки</a></td></tr>
-                <tr><td><a href="#">Бытовки (утепленные)</a></td></tr>
-                <tr><td><a href="#">Хоз. постройки </a></td></tr>
+                <tr>
+                    <td><a href="#">Каркасные дома</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Модульные дома</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Бани “Под ключ”</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Беседки</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Бытовки (утепленные)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Хоз. постройки </a></td>
+                </tr>
             </table>
             <table>
                 <th>ПРОДУКЦИЯ</th>
-                <tr><td><a href="#">Каркасные дома</a></td></tr>
-                <tr><td><a href="#">Модульные дома</a></td></tr>
-                <tr><td><a href="#">Бани “Под ключ”</a></td></tr>
-                <tr><td><a href="#">Беседки</a></td></tr>
-                <tr><td><a href="#">Бытовки (утепленные)</a></td></tr>
-                <tr><td><a href="#">Хоз. постройки </a></td></tr>
+                <tr>
+                    <td><a href="#">Каркасные дома</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Модульные дома</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Бани “Под ключ”</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Беседки</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Бытовки (утепленные)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Хоз. постройки </a></td>
+                </tr>
             </table>
             <div class="footer_buttons">
                 <a href="#" class="btn ">ЧЕСТНЫЙ КАЛЬКУЛЯТОР БЕСЕДОК</a>
@@ -1291,7 +1359,8 @@
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=a4c32ac9-8138-4091-8104-3a8a90f54a6c&lang=ru_RU" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=a4c32ac9-8138-4091-8104-3a8a90f54a6c&lang=ru_RU"
+    type="text/javascript"></script>
 <script src="js/main.min.js"></script>
 
 </html>

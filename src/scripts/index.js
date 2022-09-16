@@ -1,3 +1,4 @@
+//tabs
 const tabsBtn = document.querySelectorAll(".tabs__nav_btn");
 const tabsItems = document.querySelectorAll(".tabs__item");
 
@@ -21,7 +22,15 @@ tabsBtn.forEach ((item => {
     }
     })
 }))
+//HAMBURGER
+const hamb = document.querySelector("#myCheck");
+const hambMenu = document.querySelector(".upper_head");
 
+hamb.addEventListener('click', function(){
+  hambMenu.classList.toggle("active");
+});
+
+//slider
 var swiper = new Swiper(".card_slider", {
     slidesPerView: 1,
     spaceBetween: 1,
@@ -77,10 +86,7 @@ var swiper = new Swiper(".card_slider", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
+ 
   });
 
   //BENEFIT SLIDER
@@ -115,11 +121,11 @@ var swiper = new Swiper(".card_slider", {
     effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 'auto',
+        slidesPerView: 1,
         coverflowEffect: {
           rotate: 50,
           stretch: 0,
-          depth: 150,
+          depth: 180,
           modifier: 1,
           slideShadows: false,
         },
@@ -131,6 +137,14 @@ var swiper = new Swiper(".card_slider", {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints:{
+          850: {
+              slidesPerView: 2,
+          },
+          1000: {
+            slidesPerView: 3,
+        },
+      },
   });
 
   //LOCATION

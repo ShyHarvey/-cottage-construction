@@ -1,9 +1,9 @@
 footer {
-    background-color: #22242E;
+    background-color: #343747;
     padding-top: 40px;
 }
 
-.upper_footer {
+.upper_footer{
     max-width: 90vw;
     display: flex;
     justify-content: space-between;
@@ -72,5 +72,16 @@ footer {
     }
     .copy{
         flex-shrink: 1;
+    }
+}
+
+@media (max-width:809px) {
+    .upper_footer, .footer_tables, .footer_bottom {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    footer{
+        .logo{display: none;}
     }
 }
