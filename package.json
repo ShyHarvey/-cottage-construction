@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "site layout",
   "main": "index.js",
+  "homepage": "https://shyharvey.github.io/-cottage-construction/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Ilya <ilya.andrejchenko@gmail.com>",
@@ -14,6 +15,7 @@
     "@babel/preset-env": "^7.15.0",
     "browser-sync": "^2.27.5",
     "del": "^6.0.0",
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
